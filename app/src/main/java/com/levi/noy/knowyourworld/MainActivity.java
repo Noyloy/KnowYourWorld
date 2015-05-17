@@ -55,6 +55,8 @@ public class MainActivity extends FragmentActivity implements GoogleMap.OnMarker
                     Toast.makeText(getApplicationContext(),
                             "Error creating map", Toast.LENGTH_SHORT).show();
                 }
+                else
+                    googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 
             }
         } catch (NullPointerException exception){
